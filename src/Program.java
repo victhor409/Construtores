@@ -21,7 +21,7 @@ public class Program {
         Product product = new Product(name, price, quantity);
         
         System.out.println();
-        System.out.print("Product data: "+product.name+" , "+product.price+" , "+product.quantity+" Units , $: "+product.TotalValueInStock());
+        System.out.print("Product data: "+product.getName()+" , "+product.getPrice()+" , "+product.getQuantity()+" Units , $: "+product.TotalValueInStock());
         System.out.println();
         System.out.println();
         System.out.print("Enter the number of products to be added in stock: ");
