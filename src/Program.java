@@ -9,22 +9,23 @@ public class Program {
 		Locale.setDefault(Locale.US);
         Scanner sc = new Scanner(System.in);
         
-        Product product = new Product();
-        
         System.out.println("Enter Product Data:");
         System.out.print("Name: ");
-        product.name=sc.nextLine();
+        String name=sc.nextLine();
         System.out.print("Price: ");
-        product.price=sc.nextDouble();
+        double price=sc.nextDouble();
         System.out.print("Quantity: ");
-        product.quantity=sc.nextInt();
+        int quantity=sc.nextInt();
+        
+        Product product = new Product(name, price, quantity);
+        
         System.out.println();
         System.out.print("Product data: "+product.name+" , "+product.price+" , "+product.quantity+" Units , $: "+product.TotalValueInStock());
         System.out.println();
         System.out.println();
         System.out.print("Enter the number of products to be added in stock: ");
-        int quantity = sc.nextInt();
-        product.AddProducts(quantity);
+        int add = sc.nextInt();
+        product.AddProducts(add);
         System.out.println();
         System.out.printf("Updated data: "+product);
         System.out.println();
