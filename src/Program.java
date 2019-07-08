@@ -17,6 +17,7 @@ public class Program {
         System.out.print("Quantity: ");
         int quantity=sc.nextInt();
         
+        //os atributos estao recebendo os valores das variaveis locais
         Product product = new Product(name, price, quantity);
         
         System.out.println();
